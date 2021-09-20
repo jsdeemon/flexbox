@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            /*flex-wrap: wrap;*/
+            /*height: 90vh;*/
+            /*!* колонкой *!*/
+            /*!*flex-direction: column;*!*/
+            /*justify-content: center;*/
+            /*justify-content: space-between;*/
+            /*justify-content: space-around;*/
+
+            /*align-items: flex-end;*/
+            /*justify-content: flex-start;*/
+            /*justify-content: flex-end;*/
+            /* в строку */
+            /*flex-direction: row;*/
+            /*flex-direction: column-reverse;*/
+            /* в обратную сторону в строке */
+            /*flex-direction: row-reverse;*/
+        }
+        .item {
+            justify-content: ;
+            padding: 40px;
+            font-size: 25px;
+            border: 1px solid black;
+            height: fit-content;
+            width: fit-content;
+             flex-basis: 33%;
+
+        }
+
+        .item_1 {
+            order: 1;
+            /* fle-shrink отвечает за то, как быстро будет ужиматься элемент */
+            flex-shrink: 2;
+            flex-grow: 1;
+            /*align-self: center;*/
+        }
+
+        .item_2 {
+            order: 2;
+            flex-grow: 2;
+        }
+
+        .item_3 {
+            order: 3;
+            /*align-self: flex-end;*/
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="item item_1">1</div>
+    <div class="item item_2">2</div>
+    <div class="item item_3">3</div>
+<!--    <div class="item item_3">4</div>-->
+<!--    <div class="item item_3">5</div>-->
+<!--    <div class="item item_3">6</div>-->
+<!--    <div class="item item_3">7</div>-->
+<!--    <div class="item item_3">8</div>-->
+<!--    <div class="item item_3">9</div>-->
+<!--    <div class="item item_3">10</div>-->
+<!--    <div class="item item_3">11</div>-->
+<!--    <div class="item item_3">12</div>-->
+<!--    <div class="item item_3">13</div>-->
+<!--    <div class="item item_3">5</div>-->
+<!--    <div class="item item_3">6</div>-->
+<!--    <div class="item item_3">7</div>-->
+<!--    <div class="item item_3">8</div>-->
+<!--    <div class="item item_3">9</div>-->
+<!--    <div class="item item_3">10</div>-->
+<!--    <div class="item item_3">11</div>-->
+<!--    <div class="item item_3">12</div>-->
+<!--    <div class="item item_3">13</div>-->
+</div>
+
+</body>
+</html>
